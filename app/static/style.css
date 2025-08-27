@@ -1,0 +1,104 @@
+/* === Global Styles === */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Container (centered like Google) === */
+.container {
+    max-width: 600px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* === Logo Styling === */
+.logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Instagram-style glowing background */
+.logo::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: radial-gradient(circle at top left, #1e3c72, #2a5298, #6a11cb, #2575fc);
+    z-index: -1;
+    filter: blur(10px) brightness(1.1);
+}
+
+/* Logo SVG */
+.logo svg {
+    filter: drop-shadow(0px 0px 6px #2a5298);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo svg:hover {
+    transform: scale(1.1);
+    stroke: #6a11cb;
+}
+
+/* === Title === */
+h1 {
+    font-size: 26px;
+    color: #1e3c72;
+    margin-bottom: 30px;
+}
+
+/* === Search Bar (Google-style) === */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 14px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+input[type="text"]:focus {
+    border-color: #2575fc;
+    box-shadow: 0px 2px 10px rgba(37,117,252,0.5);
+}
+
+/* === Button === */
+button {
+    margin-left: 12px;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    transform: scale(1.05);
+}
