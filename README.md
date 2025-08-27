@@ -1,4 +1,14 @@
 Run these if using kali
+COPY THE GIT LINK
+gitclone *link*
 
-source venv/bin/activate
-python3 run.py
+GO INSIDE THE PROJECT FOLDER
+cd project2_cti_dashboard
+
+CHECK IF REQUIREMENTS ARE LISTED ,,IF YOU SEE THEN INSTALL THEM
+ls
+pip install -r requirements.txt
+
+RUN THE SERVER
+uvicorn main:app --reload
+
