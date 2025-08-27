@@ -1,0 +1,64 @@
+/* General body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 30px;
+}
+
+/* Form input and button */
+.input-group input {
+    border-radius: 8px 0 0 8px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-group button {
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background-color: #ff6f61;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.input-group button:hover {
+    background-color: #ff3b2e;
+    cursor: pointer;
+}
+
+/* Result card */
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card h4 {
+    color: #00ffff;
+}
+
+.card ul li {
+    margin: 5px 0;
+    color: #ffcc00;
+}
+
+

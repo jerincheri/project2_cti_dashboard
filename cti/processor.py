@@ -1,3 +1,6 @@
+
+scan_history = []
+
 def analyze_ip(ip, vt_data, abuse_data):
     score = 0
     reasons = []
@@ -16,4 +19,10 @@ def analyze_ip(ip, vt_data, abuse_data):
         if abuse_score:
             reasons.append(f"AbuseIPDB confidence: {abuse_score}")
 
-    return {"ip": ip, "score": score, "reasons": reasons}
+    result = {"ip": ip, "score": score, "reasons": reasons}
+    
+    # Add to scan history
+    scan_history.append(result)
+    
+    return result
+
